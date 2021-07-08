@@ -23,21 +23,18 @@ menu:
     url: /friends
     icon: fas fa-address-book
   # 二级菜单写法如下
-  #Medias:
-  #  icon: fas fa-list
-  #  children:
-  #    - name: Musics
-  #      url: /musics
-  #      icon: fas fa-music
-  #    - name: Movies
-  #      url: /movies
-  #      icon: fas fa-film
-  #    - name: Books
-  #      url: /books
-  #      icon: fas fa-book
-  #    - name: Galleries
-  #      url: /galleries
-  #      icon: fas fa-image
+  清单:
+   icon: fas fa-list
+   children:
+     - name: 音乐
+       url: /musics
+       icon: fas fa-music
+     - name: 视频
+       url: /movies
+       icon: fas fa-film
+     - name: 图片
+       url: /galleries
+       icon: fas fa-image
 
 # Website start time.
 # 站点运行开始时间.
@@ -439,6 +436,7 @@ libs:
     ribbonRefresh: /libs/background/ribbon-refresh.min.js
     ribbon_dynamic: /libs/background/ribbon-dynamic.js
     instantpage: /libs/instantpage/instantpage.js
+    sakura: /js/sakura.js
 
 # The post featured images that needs to be displayed when there is no image.
 # 无文章特色图片时需要显示的文章特色图片.
@@ -524,7 +522,7 @@ ribbon:
 
 # 背景动态彩带.
 ribbon_dynamic:
-  enable: false
+  enable: true
 
 # sharejs文章分享模块.
 # 支持顺序，可选项目为twitter, facebook, google, qq, qzone, wechat, weibo, douban, linkedin.
@@ -612,3 +610,27 @@ bbtime:
  appId: # 你的appId
  appKey: # 你的appKey
  serverURLs: # https://你的api
+
+# 动漫人物
+live2d: 
+    enable: true 
+    scriptFrom: local 
+    pluginRootPath: live2dw/ 
+    pluginJsPath: lib/ 
+    pluginModelPath: assets/ 
+    tagMode: false 
+    log: false 
+    model: 
+        use: live2d-widget-model-shizuku 
+    display: 
+        position: right 
+        width: 150 
+        height: 300 
+        mobile: 
+            show: false 
+        react: 
+            opacity: 0.7
+
+# 页面樱花飘落动效
+sakura:
+  enable: true
