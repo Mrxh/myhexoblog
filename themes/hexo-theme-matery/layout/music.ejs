@@ -1,0 +1,28 @@
+<!-- Mrxh  modify 2021.07.10-->
+<style type="text/css">
+    /* don't remove. */
+    .about-cover {
+        height: 75vh;
+    }
+</style>
+
+<%- partial('_partial/bg-cover') %>
+
+<main class="content">
+    <div id="aboutme" class="container about-container">
+        <div class="card">
+            <div class="card-content">
+
+                <div class="music-player">
+                    <div class="title center-align">
+                        <i class="fa fa-music"></i>&nbsp;&nbsp;<%- theme.music.title.show %>
+                    </div>
+                    <% if (theme.music && theme.music.enable) { %>
+                    <%- partial('_widget/music') %>
+                    <% } %>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

@@ -7,7 +7,7 @@
 <main class="content">
 
     <% if (page.current === 1
-            && ((theme.dream.enable || theme.music.enable)
+            && ((theme.dream.enable || theme.music.indexEnable)
                     || theme.video.enable || theme.recommend.enable)) { %>
     <div id="indexCard" class="index-card">
         <div class="container ">
@@ -17,9 +17,9 @@
                         <%- partial('_widget/dream') %>
                     <% } %>
 
-                    <% if (theme.music.enable && !theme.music.fixed) { %>
+                    <% if (theme.music.indexEnable && !theme.music.fixed) { %>
                         <%- partial('_widget/music') %>
-                        <% } %>
+                    <% } %>
 
                     <% if (theme.video.enable && ( theme.video.url || theme.video.iframeUrl ) ) { %>
                         <%- partial('_widget/video') %>

@@ -70,6 +70,7 @@ dream:
 # 是否在首页显示音乐.
 music:
   enable: true
+  indexEnable: false
   title: #非吸底模式有效
     enable: true
     show: 听听音乐
@@ -77,7 +78,7 @@ music:
   server: netease   #require	music platform: netease, tencent, kugou, xiami, baidu
   type: playlist    #require song, playlist, album, search, artist
   id: 503838841     #require	song id / playlist id / album id / search keyword
-  fixed: true       # 开启吸底模式
+  fixed: false       # 开启吸底模式
   autoplay: false   # 是否自动播放
   theme: '#42b983'
   loop: 'all'       # 音频循环播放, 可选值: 'all', 'one', 'none'
@@ -131,10 +132,10 @@ indexbtn:
 # 首页 banner 中的第二行个人信息配置，留空即不启用
 socialLink:
   github:  https://github.com/blinkfox
-  email: 1181062873@qq.com
+  email: 2929314899@qq.com
   facebook: # https://www.facebook.com/xxx
   twitter: # https://twitter.com/xxx
-  qq: 1181062873
+  qq: 2929314899
   weibo: # https://weibo.com/xxx
   zhihu: # https://www.zhihu.com/xxx
   rss: true # true、false
@@ -235,7 +236,7 @@ mySkills:
   data:
     Java:
       background: 'linear-gradient(to right, #FF0066 0%, #FF00CC 100%)'
-      percent: 85%
+      percent: 50%
     JavaScript:
       background: 'linear-gradient(to right, #9900FF 0%, #CC66FF 100%)'
       percent: 80%
@@ -244,10 +245,7 @@ mySkills:
       percent: 80%
     CSS:
       background: 'linear-gradient(to right, #00BCD4 0%, #80DEEA 100%)'
-      percent: 70%
-    SQL:
-      background: 'linear-gradient(to right, #4CAF50 0%, #81C784 100%)'
-      percent: 90%
+      percent: 80%
     程序设计:
       background: 'linear-gradient(to right, #FFEB3B 0%, #FFF176 100%)'
       percent: 75%
@@ -411,6 +409,8 @@ libs:
     jqcloud: /libs/jqcloud/jqcloud.css
     tocbot: /libs/tocbot/tocbot.css
     prism: /libs/prism/prism.css
+    fancybox: https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css
+    justifiedGallery: https://cdn.staticfile.org/justifiedGallery/3.7.0/css/justifiedGallery.min.css
   js:
     matery: /js/matery.js
     jquery: /libs/jquery/jquery.min.js
@@ -437,6 +437,8 @@ libs:
     ribbon_dynamic: /libs/background/ribbon-dynamic.js
     instantpage: /libs/instantpage/instantpage.js
     sakura: /js/sakura.js
+    fancybox: https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js
+    justifiedGallery: https://cdn.staticfile.org/justifiedGallery/3.7.0/js/jquery.justifiedGallery.min.js
 
 # The post featured images that needs to be displayed when there is no image.
 # 无文章特色图片时需要显示的文章特色图片.

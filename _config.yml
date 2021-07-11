@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
-keywords:
-author: John Doe
+title: Mrxh的博客
+subtitle: Mrxh的博客
+description: 肖航的个人hexo博客
+keywords: 个人博客 前端学习 新技术探索
+author: Mrxh
 language: zh-CN
 timezone: ''
 
